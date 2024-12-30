@@ -16,6 +16,17 @@
             <a href="#">Work</a>
             <a href="#">Skills</a>
         </nav>
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <script>
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('nav');
+        
+            menuToggle.addEventListener('click', () => {
+                nav.classList.toggle('active');
+            });
+        </script>
     </header>
     <section class="home">
         <div class="home-img">
